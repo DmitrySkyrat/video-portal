@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 14px;
+  height: 80px;
+  background-color: #e5e5e5;
+}
+.header-search-settings {
+  margin-left: 10px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+.header-search-field {
+  margin-left: 10px;
+  input {
+    width: 394px;
+    height: 24px;
+    background-color: #efefef;
+    border: none;
+  }
+  button {
+    width: 80px;
+    height: 24px;
+    background: #2f80ed;
+    border-radius: 0px 4px 4px 0px;
+    border: none;
+    cursor: pointer;
+  }
+}
+.header-entry {
+  position: absolute;
+  right: 156px;
+}
+.header-entry-link-image {
+  display: flex;
+  align-items: center;
+  img {
+    margin-left: 8px;
+  }
+}

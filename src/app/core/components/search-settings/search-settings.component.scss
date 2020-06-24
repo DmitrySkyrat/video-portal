@@ -1,0 +1,30 @@
+.search-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 14px;
+  height: 80px;
+  background-color: #e5e5e5;
+  color: #2f80ed;
+  input {
+    margin-left: 10px;
+    width: 149px;
+    height: 13px;
+  }
+}
+.search-item-sorting {
+  color: #929292;
+}
+.search-item-data {
+  margin-left: 11px;
+  text-decoration: underline;
+}
+.search-item-views {
+  margin-left: 21px;
+  text-decoration: underline;
+}
+.search-item-word {
+  margin-left: 21px;
+}

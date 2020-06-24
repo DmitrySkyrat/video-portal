@@ -1,0 +1,55 @@
+.login {
+  position: absolute;
+  border: 1px solid #E0E0E0;
+  background-color: white;
+  height: 250px;
+  width: 350px;
+  padding: 28px 20px 26px;
+  h2 {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 11px;
+  }
+  p {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 5px;
+  }
+  input {
+    height: 38px;
+    width: 304px;
+  }
+  button {
+    height: 30px;
+    width: 124px;
+    background-color: #2f80ed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 14px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  a {
+    color: #2f80ed;
+    text-decoration: underline;
+    font-size: 12px;
+    line-height: 14px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.login-login {
+  margin-bottom: 5px;
+}
+.login-password {
+  margin-bottom: 22px;
+}
+.login-registration-submit {
+  left: 95px;
+  position: relative;
+}

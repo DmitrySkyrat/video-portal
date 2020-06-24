@@ -1,0 +1,23 @@
+<div class="header">
+  <div>
+    <a href="#"><img src="assets/logo.jpg" alt="Portal logo" /></a>
+  </div>
+  <div class="header-search-field">
+    <input
+      type="text"
+      placeholder="What do you want to find out?"
+      [(ngModel)]="searchText"
+      (ngModelChange)="getNewSearchText()"
+    />
+    <button>Search</button>
+  </div>
+  <div class="header-search-settings" (click)="showSettings()">
+    <img src="assets/search_settings.jpg" />
+  </div>
+  <div class="header-entry">
+    <div class="header-entry-link-image">
+      <a href="#">Your name</a><img src="assets/login.jpg" />
+    </div>
+  </div>
+</div>
+<app-search-settings *ngIf="isSettings"></app-search-settings>
