@@ -6,20 +6,18 @@ import { RegistrationComponent } from './auth/components/registration/registrati
 @NgModule({
   imports: [
     RouterModule.forRoot([
-      {
+    {
         path: 'main',
-        loadChildren: () =>
-          import('./youtube/youtube.module').then((m) => m.YoutubeModule),
-      },
-      {
+        loadChildren: () => import('./youtube/youtube.module').then((m) => m.YoutubeModule),
+    },
+    {
         path: 'login',
-        loadChildren: () =>
-          import('./auth/auth.module').then((m) => m.AuthModule),
-      },
-      { path: '', redirectTo: 'main', pathMatch: 'full' },
-      { path: 'error', component: ErrorComponent },
-      { path: 'registration', component: RegistrationComponent },
-    ]),
+        loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
+    },
+    { path: '', redirectTo: 'main', pathMatch: 'full' },
+    { path: 'error', component: ErrorComponent },
+    { path: 'registration', component: RegistrationComponent },
+], { relativeLinkResolution: 'legacy' }),
   ],
   exports: [RouterModule],
 })
